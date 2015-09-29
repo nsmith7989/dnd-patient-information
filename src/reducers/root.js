@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
+import { routerStateReducer } from 'redux-router';
 
-function mainState(state = {}, action = {}) {
+const mainState = (state = {}, action = {}) => {
     return state;
 }
 
 export default combineReducers({
-    mainState
+    mainState,
+    router: routerStateReducer
 });

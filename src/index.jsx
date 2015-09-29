@@ -2,14 +2,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
-import App from './components/App.jsx'
+import routes from './routes/routes.js'
 import action from './constants/constants.js';
 import store from './store/createStore.js';
 
 
 render(
     <Provider store={store}>
-        <App />
+        { routes }
     </Provider>,
     document.getElementById('root')
 );

@@ -23,14 +23,26 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
+    "history": "^1.11.1",
     "keymirror": "^0.1.1",
     "react": "^0.14.0-rc1",
+    "react-dnd": "^1.1.8",
     "react-dom": "^0.14.0-rc1",
     "react-redux": "^3.0.0",
     "react-router": "^1.0.0-rc1",
-    "redux": "^3.0.1",
+    "redux": "^3.0.2",
     "redux-devtools": "^2.1.1",
+    "redux-router": "^1.0.0-beta3",
     "redux-thunk": "^1.0.0",
     "reselect": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsmith7989/dnd-patient-information.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/nsmith7989/dnd-patient-information/issues"
+  },
+  "homepage": "https://github.com/nsmith7989/dnd-patient-information#readme"
 }
