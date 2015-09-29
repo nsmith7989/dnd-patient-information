@@ -35,10 +35,13 @@ const actions = {
     }),
     
     field: keyMirror({
-        CREATE_FEILD: null,
-        READ_FEILD: null,
-        UPDATE_FEILD: null,
-        DELETE_FEILD: null
+        // DragEnd event adds field to  workbench
+        CREATE_FIELD: null,
+        // READ_FIELD: null,
+        // Modify settings of field (is required, pre-selected..)
+        UPDATE_FIELD: null,
+        // Remove field from WorkBench
+        DELETE_FIELD: null
     }),
     
     form: keyMirror({
