@@ -8,7 +8,7 @@ import { devTools, persistState } from 'redux-devtools';
 import logger from '../middlware/logger.js';
 import reducer from '../reducers/root.js';
 import initialState from './initialState.js';
-import routes from '../routes/routes.js';
+import routes from '../routes/routes.jsx';
 
 let middleWare = [thunk];
 let finalStore;

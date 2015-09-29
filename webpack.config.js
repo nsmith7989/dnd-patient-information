@@ -7,7 +7,7 @@ module.exports = {
     entry: {
         truckFilter: [
             'webpack-hot-middleware/client?reload=true',
-            './src/index.js'
+            './src/index.jsx'
         ]
     },
 
