@@ -9,9 +9,9 @@ export default class WorkBench extends Component {
     render() {
         const { children } = this.props;
         return (
-            <div>
+            <main>
                 <h1>WorkBench</h1>
-            </div>
+            </main>
         );
     }
 }

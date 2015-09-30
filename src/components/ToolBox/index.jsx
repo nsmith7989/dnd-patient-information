@@ -9,9 +9,9 @@ export default class ToolBox extends Component {
     render() {
         const { children } = this.props;
         return (
-            <div>
+            <aside>
                 <h1>ToolBox</h1>
-            </div>
+            </aside>
         );
     }
 }

@@ -1,4 +1,7 @@
 import React, { Component, PropTypes } from 'react';
+import ToolBox from './ToolBox';
+import WorkBench from './WorkBench';
+
 
 export default class App extends Component {
 
@@ -8,7 +11,13 @@ export default class App extends Component {
 
     render() {
         const { children } = this.props;
-        return <h1>Form Builder</h1>;
+        return (
+            <div>
+                <h1>Form Builder</h1>
+                <ToolBox/>
+                <WorkBench/>
+            </div>
+        );
     }
     
 }

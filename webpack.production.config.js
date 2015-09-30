@@ -6,7 +6,7 @@ module.exports = {
 
     entry: {
         truckFilter: [
-            './src/index.js'
+            './src/index.jsx'
         ]
     },
 
