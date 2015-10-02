@@ -14,7 +14,6 @@ let middleWare = [thunk];
 let finalStore;
 
 
-
 if(__DEV__) {
     // add additional dev middlware
     middleWare = [...middleWare, logger];

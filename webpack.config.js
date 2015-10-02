@@ -20,12 +20,12 @@ module.exports = {
     // Require the webpack and react-hot-loader plugins
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
+        //new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
             __DEV__: true
         }),
         new webpack.ResolverPlugin(
-            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
+            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
         )
     ],
 
@@ -34,12 +34,18 @@ module.exports = {
     },
 
     module: {
+        preLoaders: [],
         // Load the react-hot-loader
-        loaders: [ {
+        loaders: [{
             test: /\.jsx?$/,
-            loaders: ['babel'],
+            loader: 'babel',
             include: path.join(__dirname, 'src')
-        } ]
-    },
-
+        }
+        // ,{
+        //     test: /\.jsx?$/,
+        //     loader: 'eslint-loader',
+        //     exclude: /node_modules/
+        // }
+        ]
+    }
 };
